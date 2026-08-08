@@ -120,7 +120,7 @@ nav{
   mix-blend-mode:difference;
 }
 .mark{font-family:"Bodoni Moda",serif;font-size:19px;letter-spacing:.34em;font-weight:500}
-.navlinks{display:flex;gap:26px;font-size:10.5px;letter-spacing:.26em;text-transform:uppercase}
+.navlinks{display:flex;gap:26px;font-size:12px;letter-spacing:.18em}
 .navlinks a{color:var(--bone);text-decoration:none;opacity:.6;transition:opacity .3s}
 .navlinks a:hover{opacity:1}
 @media(max-width:760px){.navlinks{display:none}}
@@ -179,7 +179,7 @@ header{min-height:100svh;display:flex;flex-direction:column;justify-content:cent
 }
 .band .run{display:inline-block;animation:run 42s linear infinite}
 .band span{
-  font-family:"Bodoni Moda",serif;font-style:italic;font-size:clamp(20px,3vw,42px);
+  font-family:"Shippori Mincho B1","Bodoni Moda",serif;font-style:normal;font-size:clamp(18px,2.6vw,36px);
   padding:0 30px;color:#5f584c;
 }
 .band span:nth-child(3n+1){color:var(--ember);}
@@ -254,26 +254,26 @@ html:not(.js) .rule{transform:scaleX(1)}
 .step::before{content:"";position:absolute;left:calc(-1 * clamp(26px,5vw,72px));top:9px;
   width:7px;height:7px;border-radius:50%;background:var(--ink);border:1px solid var(--ember);
   transform:translateX(-3px)}
-.step .when{font-family:"Bodoni Moda",serif;font-size:12px;letter-spacing:.2em;color:var(--ember);text-transform:uppercase}
+.step .when{font-family:"Shippori Mincho B1","Bodoni Moda",serif;font-size:12.5px;letter-spacing:.2em;color:var(--ember)}
 .step h4{margin-top:9px;font-family:"Shippori Mincho B1",serif;font-size:clamp(19px,2.4vw,30px);line-height:1.55}
 .step p{margin-top:11px;font-size:14px;line-height:2.05;color:#a79d8d;max-width:min(620px,100%)}
 
 /* ---------- credo ---------- */
-.credo{text-align:center;padding:clamp(80px,14vh,170px) 0}
+.credo{text-align:center;padding:clamp(80px,14vh,170px) clamp(20px,5vw,88px)}
 .credo blockquote{
-  font-family:"Bodoni Moda",serif;font-style:italic;font-weight:400;
-  font-size:clamp(30px,6.4vw,96px);line-height:1.08;letter-spacing:-.02em;
-  max-width:16ch;margin:0 auto;
+  font-family:"Shippori Mincho B1",serif;font-style:normal;font-weight:600;
+  font-size:clamp(24px,5.2vw,74px);line-height:1.32;letter-spacing:.01em;
+  max-width:min(13em,100%);margin:0 auto;line-break:strict;
 }
 .credo blockquote .hi{color:var(--ember)}
-.credo .jp{margin-top:34px;font-family:"Shippori Mincho B1",serif;font-size:clamp(14px,1.7vw,20px);
-  line-height:2;color:#b3a998}
+.credo .es-sub{margin-top:26px;font-family:"Bodoni Moda",serif;font-style:italic;
+  font-size:clamp(15px,1.9vw,24px);line-height:1.6;color:#b3a998}
 .credo .set{margin-top:clamp(60px,10vh,120px);display:grid;grid-template-columns:repeat(3,1fr);
   gap:clamp(20px,3vw,50px);text-align:left}
 @media(max-width:880px){.credo .set{grid-template-columns:1fr}}
 .creed{border-top:1px solid var(--edge);padding-top:20px}
-.creed .es{font-family:"Bodoni Moda",serif;font-style:italic;font-size:clamp(17px,2vw,24px);line-height:1.35}
-.creed .ja{margin-top:12px;font-size:13px;line-height:1.95;color:#9d9383}
+.creed .ja{font-family:"Shippori Mincho B1",serif;font-weight:600;font-size:clamp(16px,1.8vw,21px);line-height:1.85}
+.creed .es{margin-top:12px;font-family:"Bodoni Moda",serif;font-style:italic;font-size:14px;line-height:1.5;color:#9d9383}
 
 /* ---------- contacto ---------- */
 .links{border-top:1px solid var(--edge)}
@@ -317,11 +317,11 @@ footer .fine.name{margin-top:10px;letter-spacing:.2em;text-transform:none;font-s
 <nav>
   <div class="mark">TAKUHA</div>
   <div class="navlinks">
-    <a href="#quien">Quién</a>
-    <a href="#obras">Obras</a>
-    <a href="#camino">Camino</a>
-    <a href="#credo">Credo</a>
-    <a href="#contacto">Contacto</a>
+    <a href="#quien">何者か</a>
+    <a href="#obras">作ったもの</a>
+    <a href="#camino">これまでの道</a>
+    <a href="#credo">信条</a>
+    <a href="#contacto">連絡</a>
   </div>
 </nav>
 
@@ -342,21 +342,21 @@ footer .fine.name{margin-top:10px;letter-spacing:.2em;text-transform:none;font-s
     38歳・大阪出身。貯金なし、人脈なし、スペイン語なし。<br>
     それでも南米に来て、ゼロから生きてます。
   </p>
-  <div class="scrollcue"><span class="bar"></span><span>Desliza / スクロール</span></div>
+  <div class="scrollcue"><span class="bar"></span><span>スクロール / Desliza</span></div>
 </header>
 
 <div class="band">
   <div class="run" id="run1">
-    <span>Vivo en Sudamérica</span><span>南米で生きてます</span><span>IA</span><span>Cripto</span>
-    <span>Migración</span><span>Español en Antigua</span><span>Poco a poco</span><span>Vivir es crear</span>
-    <span>Vivo en Sudamérica</span><span>南米で生きてます</span><span>IA</span><span>Cripto</span>
-    <span>Migración</span><span>Español en Antigua</span><span>Poco a poco</span><span>Vivir es crear</span>
+    <span>南米で生きてます</span><span>AI</span><span>暗号資産</span><span>海外移住</span>
+    <span>アンティグアでスペイン語</span><span>少しずつでいい</span><span>生きるとは、創ること</span><span>Vivo en Sudamérica</span>
+    <span>南米で生きてます</span><span>AI</span><span>暗号資産</span><span>海外移住</span>
+    <span>アンティグアでスペイン語</span><span>少しずつでいい</span><span>生きるとは、創ること</span><span>Vivo en Sudamérica</span>
   </div>
 </div>
 
 <!-- ============ 01 ============ -->
 <section id="quien" class="pad">
-  <div class="shead"><span class="snum">01</span><span class="stitle">Quién soy ／ 何者か</span><span class="rule"></span></div>
+  <div class="shead"><span class="snum">01</span><span class="stitle">何者か ／ Quién soy</span><span class="rule"></span></div>
   <div class="who">
     <div>
       <h2 class="reveal">「なんで生きてるんやろ」を<br>12年、探し続けた。<br><em>答えは探すもんやなかった。</em></h2>
@@ -384,7 +384,7 @@ footer .fine.name{margin-top:10px;letter-spacing:.2em;text-transform:none;font-s
 <!-- ============ 02 ============ -->
 <section id="obras">
   <div class="pad">
-    <div class="shead"><span class="snum">02</span><span class="stitle">Obras ／ 作ったもの</span><span class="rule"></span></div>
+    <div class="shead"><span class="snum">02</span><span class="stitle">作ったもの ／ Obras</span><span class="rule"></span></div>
   </div>
   <div class="rail" id="rail">
 
@@ -452,40 +452,40 @@ footer .fine.name{margin-top:10px;letter-spacing:.2em;text-transform:none;font-s
     </a>
 
   </div>
-  <div class="pad railhint">← 横にドラッグ / arrastra →</div>
+  <div class="pad railhint">← 横にドラッグ / Arrastra →</div>
 </section>
 
 <!-- ============ 03 ============ -->
 <section id="camino" class="pad">
-  <div class="shead"><span class="snum">03</span><span class="stitle">Camino ／ ここまでの道</span><span class="rule"></span></div>
+  <div class="shead"><span class="snum">03</span><span class="stitle">ここまでの道 ／ Camino</span><span class="rule"></span></div>
   <div class="time" id="time">
     <div class="step reveal">
-      <div class="when">Día 1 — Paraguay</div>
+      <div class="when">1日目 — パラグアイ</div>
       <h4>18,000km 離れて、やっと分かった</h4>
       <p>アスンシオンから始まった。詰まってたのは環境じゃない、まだ磨かれてない自分自身だった。どんな石も、磨けば光る。</p>
     </div>
     <div class="step reveal d2">
-      <div class="when">Guatemala — Antigua</div>
+      <div class="when">グアテマラ — アンティグア</div>
       <h4>日本語しか話せないのに、3ヶ月</h4>
       <p>石畳の街で語学学校へ。人生初のスペイン語の自己紹介で心臓がバクバクした。完璧じゃなくていい、poco a poco でいい。</p>
     </div>
     <div class="step reveal d3">
-      <div class="when">Día 10</div>
+      <div class="when">10日目</div>
       <h4>Mi Amigo が生まれた</h4>
       <p>10日前は完全なゼロ。AIを使って自分でアプリを開発した。この街を訪れる人の「最初の友だち」になる、無料の音声ガイド。</p>
     </div>
     <div class="step reveal d4">
-      <div class="when">A los 38</div>
+      <div class="when">38歳</div>
       <h4>38歳、グアテマラで家出しました</h4>
       <p>「このホームステイ、実家暮らしみたいやな」と思った瞬間、もう自分の部屋を借りて飛び出してた。学校でインプットするだけやなく、自分から動いてアウトプットする。</p>
     </div>
     <div class="step reveal d5">
-      <div class="when">Ahora — 100 días</div>
+      <div class="when">いま — 100日</div>
       <h4>毎日1本、100日。撮り続ける</h4>
       <p>南米の日常をノンカットで。台本は作らない。挑戦のリアルな過程を、そのまま置いていく。</p>
     </div>
     <div class="step reveal d6">
-      <div class="when">1 de octubre — Osaka</div>
+      <div class="when">10月1日 — 大阪</div>
       <h4>大阪・心斎橋にしゃぶしゃぶ店</h4>
       <p>アグー豚のしゃぶしゃぶ。10月1日オープン。正直、自分が一番楽しみにしてるかも。</p>
     </div>
@@ -494,29 +494,29 @@ footer .fine.name{margin-top:10px;letter-spacing:.2em;text-transform:none;font-s
 
 <!-- ============ 04 ============ -->
 <section id="credo" class="pad credo">
-  <div class="shead" style="text-align:left"><span class="snum">04</span><span class="stitle">Credo ／ 信条</span><span class="rule"></span></div>
-  <blockquote class="reveal">Vivir es <span class="hi">crear</span>.</blockquote>
-  <div class="jp reveal d2">生きるとは、創ること。</div>
+  <div class="shead" style="text-align:left"><span class="snum">04</span><span class="stitle">信条 ／ Credo</span><span class="rule"></span></div>
+  <blockquote class="reveal">生きるとは、<span class="hi">創ること</span>。</blockquote>
+  <div class="es-sub reveal d2">Vivir es crear.</div>
 
   <div class="set">
     <div class="creed reveal d3">
-      <div class="es">No sé mañana,<br>pero hoy lo doy todo.</div>
       <div class="ja">先は読めなくても、<br>今日のこの一歩を本気で。</div>
+      <div class="es">No sé mañana,<br>pero hoy lo doy todo.</div>
     </div>
     <div class="creed reveal d4">
-      <div class="es">La respuesta no se busca,<br>se crea.</div>
       <div class="ja">答えは探すもんやない、<br>作るもんやった。</div>
+      <div class="es">La respuesta no se busca,<br>se crea.</div>
     </div>
     <div class="creed reveal d5">
-      <div class="es">Poco a poco<br>se llega lejos.</div>
       <div class="ja">少しずつで、<br>遠くまで行ける。</div>
+      <div class="es">Poco a poco<br>se llega lejos.</div>
     </div>
   </div>
 </section>
 
 <!-- ============ 05 ============ -->
 <section id="contacto" class="pad">
-  <div class="shead"><span class="snum">05</span><span class="stitle">Contacto ／ 会いに来て</span><span class="rule"></span></div>
+  <div class="shead"><span class="snum">05</span><span class="stitle">会いに来て ／ Contacto</span><span class="rule"></span></div>
   <div class="links">
     <a class="link reveal" href="https://www.instagram.com/takuha_nanbei/" target="_blank" rel="noopener">
       <span class="n">Instagram</span><span class="h">日常密着<b>@takuha_nanbei</b></span></a>
