@@ -4,17 +4,50 @@
 <meta charset="UTF-8">
 <script>document.documentElement.className='js';</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TAKUHA — Huí… y aquí empezó todo</title>
-<meta name="description" content="TAKUHA｜Emprendedor en Antigua 🇬🇹. 逃げた先が、スタート地点やった。南米で生きてます。">
+<title>TAKUHA（タクハ）公式サイト｜グアテマラ・アンティグアで生きる日本人</title>
+<meta name="description" content="TAKUHA（タクハ／@takuha_nanbei）の公式サイト。大阪出身、グアテマラ・アンティグア在住。逃げた先が、スタート地点やった。南米で生きてます。">
+<link rel="canonical" href="https://takuha.github.io/motionsite/">
 <meta name="theme-color" content="#0a0908">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0908'/%3E%3Ctext x='16' y='23' font-size='20' font-family='Georgia,serif' font-style='italic' fill='%23e2542a' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E">
-<meta property="og:type" content="website">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="TAKUHA（タクハ）">
 <meta property="og:url" content="https://takuha.github.io/motionsite/">
-<meta property="og:title" content="TAKUHA — Huí… y aquí empezó todo">
+<meta property="og:title" content="TAKUHA（タクハ）公式サイト｜グアテマラ・アンティグアで生きる日本人">
 <meta property="og:description" content="逃げた先が、スタート地点やった。38歳・大阪出身。グアテマラ・アンティグアから、南米で生きてます。">
 <meta property="og:image" content="https://takuha.github.io/motionsite/assets/og.jpg">
+<meta property="og:image:alt" content="TAKUHA（タクハ）">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://takuha.github.io/motionsite/#takuha",
+  "name": "TAKUHA",
+  "alternateName": ["タクハ", "takuha_nanbei"],
+  "url": "https://takuha.github.io/motionsite/",
+  "image": "https://takuha.github.io/motionsite/assets/og.jpg",
+  "jobTitle": "Emprendedor",
+  "description": "大阪出身、グアテマラ・アンティグア在住。逃げた先が、スタート地点やった。南米で生きてます。",
+  "homeLocation": {
+    "@type": "Place",
+    "name": "Antigua Guatemala",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Antigua Guatemala",
+      "addressCountry": "GT"
+    }
+  },
+  "sameAs": [
+    "https://www.instagram.com/takuha_nanbei/",
+    "https://www.tiktok.com/@takuha_nanbei",
+    "https://www.youtube.com/@takuha_nanbei",
+    "https://x.com/takuha_nanbei",
+    "https://www.threads.net/@takuha_nanbei",
+    "https://lit.link/takuha_nanbei"
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Shippori+Mincho+B1:wght@400;600;800&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -100,6 +133,15 @@ header{min-height:100svh;display:flex;flex-direction:column;justify-content:cent
   text-transform:uppercase;color:var(--bone-dim);margin-bottom:clamp(22px,4vh,44px);
 }
 .hero-meta b{color:var(--ember);font-weight:400}
+.hero-name{
+  display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-style:normal;font-weight:500;
+  font-size:clamp(15px,1.9vw,22px);letter-spacing:.42em;line-height:1.4;
+  color:var(--bone);margin-bottom:clamp(12px,2.2vh,24px);
+  opacity:0;animation:fadeup 1s var(--ease) .05s forwards;
+}
+.hero-name .ja{font-size:.64em;letter-spacing:.28em;color:var(--bone-dim);margin-left:.55em}
+.hero-name .hd{font-family:"Bodoni Moda",serif;font-style:italic;font-size:.7em;
+  letter-spacing:.04em;color:var(--ember-soft);margin-left:.7em;white-space:nowrap}
 .hero-title{
   font-family:"Bodoni Moda",serif;font-style:italic;font-weight:500;
   font-size:clamp(46px,10.5vw,168px);line-height:.92;letter-spacing:-.025em;
@@ -289,6 +331,7 @@ footer .fine{margin-top:34px;font-size:10px;letter-spacing:.28em;text-transform:
     <span>Antigua, Guatemala</span><span>—</span><b>Emprendedor</b><span>—</span><span>14°33′N 90°44′W</span>
   </div>
   <h1 class="hero-title">
+    <span class="hero-name">TAKUHA<span class="ja">タクハ</span><span class="hd">@takuha_nanbei</span></span>
     <span class="rv"><i style="animation-delay:.15s">Huí…</i></span>
     <span class="rv l2"><i style="animation-delay:.33s">y aquí</i></span>
     <span class="rv l2"><i style="animation-delay:.51s">empezó todo</i></span>
