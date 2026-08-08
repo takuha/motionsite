@@ -276,6 +276,26 @@ html:not(.js) .rule{transform:scaleX(1)}
 .creed .es{margin-top:12px;font-family:"Bodoni Moda",serif;font-style:italic;font-size:14px;line-height:1.5;color:#9d9383}
 
 /* ---------- contacto ---------- */
+.ctahead{margin-bottom:clamp(18px,3vh,26px);font-family:"Shippori Mincho B1",serif;
+  font-size:clamp(15px,1.8vw,19px);line-height:2;color:#b8ae9d}
+.direct{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));
+  gap:clamp(14px,2vw,22px);margin-bottom:clamp(44px,7vh,78px)}
+.dbtn{
+  display:flex;flex-direction:column;gap:9px;
+  padding:clamp(20px,2.6vh,28px) clamp(20px,2.4vw,30px);
+  border:1px solid var(--edge);text-decoration:none;color:inherit;
+  position:relative;overflow:hidden;
+  transition:border-color .45s var(--ease),color .45s var(--ease);
+}
+.dbtn::before{content:"";position:absolute;inset:0;background:var(--ember);
+  transform:translateY(101%);transition:transform .5s var(--ease);z-index:-1}
+.dbtn:hover::before{transform:translateY(0)}
+.dbtn:hover{color:var(--ink);border-color:var(--ember)}
+.dbtn .dl{font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;opacity:.7}
+.dbtn .dv{font-family:"Bodoni Moda",serif;font-size:clamp(16px,1.9vw,23px);
+  line-height:1.4;word-break:break-all}
+.snslabel{font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--bone-dim);
+  margin-bottom:14px}
 .links{border-top:1px solid var(--edge)}
 .link{
   display:flex;align-items:center;justify-content:space-between;gap:20px;
@@ -517,6 +537,16 @@ footer .fine.name{margin-top:10px;letter-spacing:.2em;text-transform:none;font-s
 <!-- ============ 05 ============ -->
 <section id="contacto" class="pad">
   <div class="shead"><span class="snum">05</span><span class="stitle">会いに来て ／ Contacto</span><span class="rule"></span></div>
+
+  <p class="ctahead reveal">仕事の相談・取材・留学の問い合わせは、ここから直接どうぞ。</p>
+  <div class="direct">
+    <a class="dbtn reveal" id="mailbtn" href="#" data-u="takuha1988" data-d="gmail.com">
+      <span class="dl">Email ／ メール</span>
+      <span class="dv" id="mailaddr">takuha1988 [at] gmail.com</span>
+    </a>
+  </div>
+
+  <p class="snslabel reveal">SNS ／ ふだんの発信はこちら</p>
   <div class="links">
     <a class="link reveal" href="https://www.instagram.com/takuha_nanbei/" target="_blank" rel="noopener">
       <span class="n">Instagram</span><span class="h">日常密着<b>@takuha_nanbei</b></span></a>
@@ -546,6 +576,14 @@ footer .fine.name{margin-top:10px;letter-spacing:.2em;text-transform:none;font-s
 <script>
 (function(){
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* --- メールアドレスは実行時に組み立てる（収集ボット対策） --- */
+  var mb = document.getElementById('mailbtn');
+  if(mb){
+    var addr = mb.getAttribute('data-u') + String.fromCharCode(64) + mb.getAttribute('data-d');
+    mb.href = 'mailto:' + addr + '?subject=' + encodeURIComponent('【お問い合わせ】タクハ公式サイトより');
+    document.getElementById('mailaddr').textContent = addr;
+  }
 
   /* --- cursor --- */
   var cur=document.querySelector('.cur'), dot=document.querySelector('.cur-dot');
